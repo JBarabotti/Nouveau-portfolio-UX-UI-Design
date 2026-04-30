@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jordan Barabotti</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dd226ad74d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <svg class="diamond-svg" viewBox="0 0 120 120">
+                <rect class="diamond-rect" x="25" y="25" width="70" height="70" fill="none" stroke="#fc2a2a" stroke-width="3" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
+            </svg>
+            <span class="preloader-text">JB</span>
+        </div>
+    </div>
+
+    <!-- Header with logo and navigation -->
+    <header>
+        <a href="#" class="logo">
+            <i class="fa-solid fa-code logo-icon"></i>
+            <span class="logo-text">Jordan Barabotti</span>
+        </a>
+
+        <nav>
+            <div class="burger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul>
+                <a href="#">Accueil</a>
+                <a href="#skills">Compétences</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+                <div class="lang-container">
+                    <button class="lang">
+                        <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 1a8 8 0 110 16A8 8 0 019 1zm-.26 12.524l.16-.009a6.439 6.439 0 00-2.837.765c.235.34.5.633.793.884.435.373.9.623 1.363.775.226.073.406.11.523.125l-.002-2.54zm.72.014v2.495a3.27 3.27 0 00.346-.094 3.992 3.992 0 001.363-.775c.29-.249.552-.539.786-.873a6.419 6.419 0 00-2.494-.753zM5.49 14.63l-.2.14a6.62 6.62 0 00-.385.306 7.25 7.25 0 001.955.935 5.347 5.347 0 01-1.37-1.381zm7.039.01l-.02.029a5.336 5.336 0 01-1.321 1.328 7.307 7.307 0 001.91-.92 6.42 6.42 0 00-.57-.438zM4.154 9.46h-2.47a7.315 7.315 0 002.67 5.209c.249-.225.512-.43.787-.615-.617-1.157-.968-2.675-.987-4.594zm12.161 0l-2.445-.001v.032c-.022 1.912-.375 3.423-.993 4.576.269.181.525.382.769.6a7.31 7.31 0 002.67-5.207zm-3.115 0H9.46v3.406l.172.015a7.1 7.1 0 012.672.836c.557-1.052.878-2.452.896-4.256zm-4.46 0H4.824v.017c.02 1.79.34 3.181.89 4.23a7.106 7.106 0 012.956-.851l.07-.004V9.459zM4.155 3.501l-.01.008a7.311 7.311 0 00-2.47 5.23h2.487c.058-1.814.402-3.284.978-4.442-.35-.234-.68-.5-.985-.796zm1.559 1.147l-.02.041c-.502 1.05-.806 2.387-.861 4.05H8.74V5.504l-.07-.005a7.106 7.106 0 01-2.956-.851zm8.13-1.148l.189-.187a7.218 7.218 0 01-1.153.973c.578 1.16.925 2.633.983 4.454l2.462-.001a7.312 7.312 0 00-2.48-5.239zm-1.538 1.137l-.275.143a7.106 7.106 0 01-2.57.71L9.46 8.739h3.732c-.056-1.691-.37-3.045-.886-4.102zM8.294 2.102a4.39 4.39 0 00-1.393.9c-.32.303-.609.654-.862 1.058a6.424 6.424 0 002.7.772l.002-2.875a3.39 3.39 0 00-.447.145zm1.166-.096v2.81a6.435 6.435 0 002.5-.754l.02-.012a5.362 5.362 0 00-.856-1.047 4.39 4.39 0 00-1.664-.997zm-2.22-.123l-.114.03a7.299 7.299 0 00-2.444 1.164c.247.233.51.445.786.634.284-.457.61-.854.972-1.196.269-.253.538-.462.8-.632zm3.56.01l.038.025c.245.163.496.36.746.597.36.34.683.732.965 1.182.27-.184.527-.392.769-.62A7.288 7.288 0 0010.8 1.894z">
+                            </path>
+                        </svg>
+                        <span>
+                            <svg class="chevron" width="10" height="18" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true" focusable="false">
+                                <path d="M.123 7.164a.382.382 0 01-.021-.54.384.384 0 01.505-.053l.037.03 4.34 3.996 4.373-3.996a.384.384 0 01.507-.01l.035.033a.382.382 0 01.01.506l-.034.035-4.633 4.234a.385.385 0 01-.481.03l-.039-.03L.123 7.164z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="lang-menu">
+                        <a href="#" data-lang="fr">Français</a>
+                        <a href="#" data-lang="en">English</a>
+                    </div>
+                </div>
+                <a href="Jordan-Barabotti-CV-Alternance-Développeur-Web.pdf" target="_blank" class="cv">CV</a>
+                <button class="theme" id="theme"><svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 24 24"
+     width="2.7rem"
+     height="2.7rem"
+     fill="currentColor"
+     class="icon-moon">
+  <path d="M21 12.79A9 9 0 0 1 11.21 3
+           7 7 0 1 0 21 12.79z"/>
+</svg></button>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero" id="home">
+        <div class="content">
+            <h1>Jordan barabotti</h1>
+            <h2>Apprenti <span class="typing-text">Développeur Web</span></h2>
+            <p>
+                Je crée des expériences web responsives et intuitives en utilisant des technologies frontend modernes. Avec 6 mois d'expérience en développement frontend, je me concentre sur la création d'interfaces propres, accessibles et sur l'amélioration continue de mes compétences.
+            </p>
+
+            <div class="interact-buttons">
+                <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-code"></i> Voir Projets
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-paper-plane"></i> Me Contacter
+                </a>
+            </div>
+
+            <div class="social-icons">
+                <a href="" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="profile-container">
+            <div class="border-outer"></div>
+            <div class="border-middle"></div>
+            <div class="border-inner"></div>
+            <div class="border-container"></div>
+            <div class="pulse-ring"></div>
+            <div class="pulse-ring"></div>
+            <div class="pulse-ring"></div>
+            <img src="img/Profil.png" alt="Profil Picture" class="profile-img" width="240px">
+        </div>
+    </section>
+
+    <!-- Link to javascript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
