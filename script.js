@@ -119,12 +119,39 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     }
+
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    const skillSection = document.querySelector('.skill');
+    if (skillSection) {
+        observer.observe(skillSection);
+    }
+
+    const projectsSection = document.querySelector('.projects');
+    if (projectsSection) {
+        observer.observe(projectsSection);
+    }
 });
 
 // Text typing effect
 const text = [
-    "Développeur Front-end",
-    "UI/UX Designer",
+    "Développeur Frontend",
+    "Développeur Backend",
+    "Designeur UI/UX",
     "Développeur Web",
 ];
 let textIndex = 0;
