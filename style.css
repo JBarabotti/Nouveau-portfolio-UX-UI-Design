@@ -1083,7 +1083,7 @@ body.loaded .profile-container {
         }
 
         .projects h2 {
-            font-size: 1.5rem;
+            font-size: 2.5rem;
             margin-bottom: 2rem;
         }
 
@@ -1092,21 +1092,21 @@ body.loaded .profile-container {
         }
 
         .project-content h3 {
-            font-size: 1.5rem;
+            font-size: 1rem;
         }
 
         .project-content p {
-            font-size: 1rem;
-            margin: 0.2rem 0 0.8rem;
+            font-size: 0.6rem;
+            line-height: 1.9rem;
         }
 
         .project-content a {
-            width: 3rem;
-            height: 3rem;
+            width: 1.5rem;
+            height: 1.5rem;
         }
 
         .project-content a i {
-            font-size: 1.2rem;
+            font-size: 0.9rem;
         }
 
         .profile-container {
